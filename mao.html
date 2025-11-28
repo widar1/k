@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <h1 class="site-title">Det röda arkivet</h1>
+      </div>
+    </header>
+
+    <div class="navbar">
+      <a href="index.html">Hem</a>
+      <a href="kontakt.html">Kontakta mig</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          revolutionärer
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="film_1.html">Karl Marx</a>
+          <a href="film_2.html">josef Stalin</a>
+          <a href="film_3.html">Mao Zedong</a>
+        </div>
+      </div>
+      <a href="secret.html" class="split"><img src="" alt="" /></a>
+    </div>
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup" id="popup">
+        <span class="close" id="closePopup">&times;</span>
+
+        <div class="popup-content">
+          <p>Bli Kommunist idag!!</p>
+
+          <p>Lämna dem kapitalistiska grisarna</p>
+
+          <input type="email" placeholder="din email" id="emailInput" />
+
+          <button onclick="submitForm()">konvertera</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
