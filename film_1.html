@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Det röda arkivet</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1 class="site-title">Det röda arkivet</h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="index.html">Hem</a>
+      <a href="kontakt.html">Kontakta mig</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">
+          Revolutionärer
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="marx.html">Karl Marx</a>
+          <a href="stalin.html">Josef Stalin</a>
+          <a href="mao.html">Mao Zedong</a>
+        </div>
+      </div>
+
+      <a href="secret.html" class="split" title="Hemlig länk">
+        <i class="fa-solid fa-star"></i>
+      </a>
+    </nav>
+
+    <main>
+      <h2>Välkommen, kamrat.</h2>
+      <p>Här finner du information om historiens gång.</p>
+    </main>
+
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup" id="popup">
+        <span class="close" id="closePopup">&times;</span>
+
+        <div class="popup-content">
+          <h3>Bli Kommunist idag!</h3>
+          <p>Lämna de kapitalistiska grisarna</p>
+
+          <label for="emailInput" class="sr-only">Din email</label>
+          <input type="email" placeholder="din@email.com" id="emailInput" />
+
+          <button onclick="submitForm()">Konvertera</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+
+    <div class="audio-player">
+      <p>Spela nationalsången:</p>
+      <audio controls id="bg-audio">
+        <source src="soviet-anthem.mp3" type="audio/mpeg" />
+        Din webbläsare stödjer inte ljudelementet.
+      </audio>
+    </div>
+  </body>
+</html>
