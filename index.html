@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Det Röda arkivet</title>
-     <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="bg-remover-1764792470977.png" />
 
     <link
       rel="stylesheet"
@@ -17,8 +18,19 @@
   </head>
   <body>
     <header class="site-header">
-      
-        <h1 class="site-title">Det röda arkivet</h1>
+      <div class="header-content">
+        <div class="logo-container">
+          <img
+            src="bg-remover-1764792470977.png"
+            alt="Det Röda arkivet logga"
+            class="logo"
+            style="width: 80px; height: 80px"
+          />
+        </div>
+        <div class="header-text">
+          <h1 class="site-title">Det röda arkivet</h1>
+          <p class="site-subtitle">Historia, revolution och förändring</p>
+        </div>
       </div>
     </header>
 
@@ -38,6 +50,25 @@
       </div>
       <a href="secret.html" class="split"><img src="" alt="" /></a>
     </div>
+    <div class="main-content">
+      <div class="content-section">
+        <h2>Välkommen till Det Röda arkivet</h2>
+        <p class="txt">
+          Detta är en plats för att utforska historien om revolutionära rörelser
+          och tänkare som har format vår värld. Här hittar du information om
+          viktiga figurer och händelser som har påverkat samhällsutvecklingen.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>Om arkivet</h2>
+        <p class="txt">
+          Det Röda arkivet är dedikerat till att bevara och dela kunskap om
+          politisk historia och revolutionära idéer. Utforska våra sidor för att
+          lära dig mer om de personer som har präglat historien.
+        </p>
+      </div>
+    </div>
     <div class="popup-overlay" id="popupOverlay">
       <div class="popup" id="popup">
         <span class="close" id="closePopup">&times;</span>
@@ -45,11 +76,21 @@
         <div class="popup-content">
           <p>Bli Kommunist idag!</p>
 
-          <p>Lämna dem kapitalistiska grisarna</p>
+          <p
+            class="txt"
+            style="
+              color: #590606;
+              text-transform: lowercase;
+              text-shadow: 0px 0px 0px #000;
+              font-size: 13px;
+            "
+          >
+            Lämna dem kapitalistiska grisarna nu!
+          </p>
 
           <input type="email" placeholder="din email" id="emailInput" />
 
-          <button onclick="submitForm()">konvertera</button>
+          <button onclick="submitForm()">konvertera!</button>
         </div>
       </div>
     </div>
@@ -57,7 +98,7 @@
     <script src="script.js"></script>
 
     <audio autoplay loop id="bg-audio">
-      <source src="soviet-anthem.mp3" type="audio/mpeg">
+      <source src="Soviet_Anthem_Instrumental.ogg" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
   </body>

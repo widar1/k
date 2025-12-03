@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     closePopupFunc();
   }
 
-  setTimeout(openPopup, 7000);
+  setTimeout(openPopup, 3000);
 
   closePopup.addEventListener("click", closePopupFunc);
 
