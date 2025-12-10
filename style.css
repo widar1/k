@@ -116,6 +116,12 @@ body {
   font-family: Arial;
   border-radius: 8px;
 }
+.main-content a image {
+  border-radius: 8px;
+}
+image {
+  border-radius: 8px;
+}
 
 .navbar a {
   float: left;
